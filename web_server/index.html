@@ -1,0 +1,1165 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<h1>Load Bank Control Panel</h1>
+
+<!-- ************************************************ Switch Setting / Status ************************************************** -->
+
+		<div class="vertical-section" id="switch-section">
+
+			<h2 id="switch-section-title-h2">Switch Section</h2>
+
+			<div class="switch-selection">
+				<div class="on-off-radio">
+					<p>All Switches:</p>
+				</div>
+				<div class="on-off-radio">
+					<input type="radio" id="switches-on"  value="On" onclick="setSwitchesAllOn()">
+				<label for="switches-on">On</label><br>
+				</div>
+				<div class="on-off-radio">
+					<input type="radio" id="switches-off"  value="Off" onclick="setSwitchesAllOff()">
+					<label for="switch-off">Off</label><br>
+				</div>
+			</div>
+
+<!-- ******* Div for holding both panels of 18 toggle switches with titles -- one for displaying and one for setting ********* -->
+
+			<div class="switch-panels">
+
+				<div class="switch-panel" id="switch-set-status-panel">			<!-- switch panel for setting switch status -->
+					<div class="switch-title" id="set-switch-status-div">		<!-- title -->
+						<h3 id="set-switch-status-title-h3">Set Desired Switch Status</h3>
+					</div>
+
+					<!-- first row of six switches -->
+					<div class="switch-group-div"> 
+
+						<div class="switch-div"> 	<!-- one switch -->
+							<div>
+								<label>SW1</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt1">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW2</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt2">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW3</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt3">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW4</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt4">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW5</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt5">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW6</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt6">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div >
+
+					<!-- second row of six switches -->
+					<div class="switch-group-div">
+
+					<div class="switch-div">
+						<div>
+							<label>SW7</label>
+						</div>
+						<div>
+							<label class="switch">
+								<input type="checkbox" id="swt7">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="switch-div">
+						<div>
+							<label>SW8</label>
+						</div>
+						<div>
+							<label class="switch">
+								<input type="checkbox" id="swt8">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="switch-div">
+						<div>
+							<label>SW9</label>
+						</div>
+						<div>
+							<label class="switch">
+								<input type="checkbox" id="swt9">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="switch-div">
+						<div>
+							<label>SW10</label>
+						</div>
+						<div>
+							<label class="switch">
+								<input type="checkbox" id="swt10">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="switch-div">
+						<div>
+							<label>SW11</label>
+						</div>
+						<div>
+							<label class="switch">
+								<input type="checkbox" id="swt11">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="switch-div">
+						<div>
+							<label>SW12</label>
+						</div>
+						<div>
+							<label class="switch">
+								<input type="checkbox" id="swt12">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+					</div >
+
+					<!-- third row of six switches -->
+					<div class="switch-group-div">
+
+						<div class="switch-div">
+							<div>
+								<label>SW13</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt13">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW14</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt14">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW15</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt15">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW16</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt16">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW17</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt17">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW18</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="swt18">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div >
+				</div>
+
+				<div class="switch-panel" id="switch-display-status-panel">		<!-- switch panel for displaying current switch status -->
+					<div class="switch-title" id="display-switch-status-div">	<!-- title -->
+						<h3 id="set-switch-status-title-h3">Current Switch Status</h3>
+					</div>
+
+					<div class="switch-group-div">								<!-- first row of six switches -->
+
+						<div class="switch-div">
+							<div>
+								<label>SW1</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw1" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW2</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw2" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW3</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw3" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW4</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw4" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW5</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw5" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW6</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw6" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div >
+
+					<div class="switch-group-div">								<!-- second row of six switches -->
+
+						<div class="switch-div">
+							<div>
+								<label>SW7</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw7" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW8</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw8" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW9</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw9" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW10</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw10" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW11</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw11" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW12</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw12" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div >
+
+					<div class="switch-group-div">								<!-- third row of six swithces -->
+
+						<div class="switch-div">
+							<div>
+								<label>SW13</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw13" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW14</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw14" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW15</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw15" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW16</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw16" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW17</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw17" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="switch-div">
+							<div>
+								<label>SW18</label>
+							</div>
+							<div>
+								<label class="switch">
+									<input type="checkbox" id="sw18" disabled>
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div >
+				</div>
+
+			</div>
+
+
+			<div class="submit-button">
+				<button id="sw-submit-btn" onclick="setSwitchStatus()">Submit Changes</button>
+			</div>
+
+			<div>
+				<p id="switch-message-display"></p>
+			</div>
+		</div>
+
+<!-- ************************************************ ZCS Setting / Status ************************************************** -->
+
+		<div class="vertical-section" id="zcs-section">
+
+			<h2 id="switch-section-title-h2">ZCS Section</h2>
+
+			<div class="zcs-panels">
+				
+				<div class="zcs-panel" id="zcs-set-status-id">
+					<div class="zcs-title" id="zcs-set-status-title-id">
+						<h3>Set Desired ZCS Status</h3>
+					</div>
+
+					<div>
+						<label class="switch">
+							<input type="checkbox" id="zcs">
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="zcs-panel" id="zcs-display-status-id">
+					<div class="zcs-title" id="zcs-display-status-title-id">
+						<h3>Current ZCS Status</h3>
+					</div>
+
+					<div>
+						<label class="switch">
+							<input type="checkbox" id="zcs-display" disabled>
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="zcs-submit-changes">
+				<button id="zcs-submit-btn" onclick="setZCSStatus()">Submit Changes</button>
+			</div>
+
+			<div>
+				<p id="zcs-message-display"></p>
+			</div>
+
+		</div>
+		
+
+<!-- ********************************************* Phase Setting / Status ********************************************* -->
+
+		<div class="vertical-section" id="phase-section">
+
+			<h2 id="switch-section-title-h2">Phase Section</h2>
+
+<!-- ******* Div for holding both panels of 18 drop-down menus with titles -- one for displaying and one for setting ********* -->
+
+			<div class="phase-panels">
+
+				<!-- switch panel for setting phase status -->
+				<div class="phase-panel" id="phase-set-status-panel">	
+
+					<!-- title -->		
+					<div class="phase-title" id="set-phase-status-div">
+						<h3>Set Desired Phase Status</h3>
+					</div>
+
+					<!-- first row of six drop-down menus -->
+					<div class="phase-group-div">
+
+						<!-- one drop-down menu -->
+						<div class="phase-div">
+							<div>
+								<label>SW1</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu1">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW2</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu2">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW3</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu3">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW4</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu4">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW5</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu5">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW6</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu6">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+					</div >
+
+					<!-- second row of six drop-down menus -->
+					<div class="phase-group-div">
+
+						<div class="phase-div">
+							<div>
+								<label>SW7</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu7">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW8</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu8">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW9</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu9">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW10</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu10">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW11</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu11">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW12</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu12">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+					</div >
+
+					<!-- third row of six drop-down menus -->
+					<div class="phase-group-div">
+
+						<div class="phase-div"> 	<!-- one drop-down menu -->
+							<div>
+								<label>SW13</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu13">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW14</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu14">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW15</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu15">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW16</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu16">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW17</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu17">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW18</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="menu18">
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- switch panel for displaying phase status -->
+				<div class="phase-panel" id="phase-display-status-panel">	
+
+					<!-- title -->		
+					<div class="phase-title" id="display-phase-status-div">
+						<h3>Current Phase Status</h3>
+					</div>
+
+					<!-- first row of six drop-down menus -->
+					<div class="phase-group-div">
+
+						<!-- one drop-down menu -->
+						<div class="phase-div">
+							<div>
+								<label>SW1</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu1" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW2</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu2" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW3</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu3" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW4</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu4" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW5</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu5" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW6</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu6" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+					</div >
+
+					<!-- second row of six drop-down menus -->
+					<div class="phase-group-div">
+
+						<div class="phase-div">
+							<div>
+								<label>SW7</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu7" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW8</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu8" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW9</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu9" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW10</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu10" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW11</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu11" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW12</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu12" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+					</div >
+
+					<!-- third row of six drop-down menus -->
+					<div class="phase-group-div">
+
+						<div class="phase-div"> 	<!-- one drop-down menu -->
+							<div>
+								<label>SW13</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu13" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW14</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu14" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW15</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu15" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW16</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu16" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW17</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu17" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+
+						<div class="phase-div">
+							<div>
+								<label>SW18</label>
+							</div>
+							<div>
+								<select name="phase" class="phase-select" id="dispmenu18" disabled>
+									<div>
+										<option value="1" selected>1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</div>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="submit-button">
+				<button id="phase-submit-button" onclick="setPhaseStatus()">Submit Changes</button>
+			</div>
+
+			<div>
+				<p id="phase-message-display"></p>
+			</div>
+		</div>
+
+		
+
+<!-- **************************************** Include the Javascript file to run ******************************** -->
+
+		<script src="index.js"></script>
+	</body>
+</html>
