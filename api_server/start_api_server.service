@@ -1,0 +1,12 @@
+[Unit]
+Description=Service for starting API Server on bootup
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/load_bank/api_server
+ExecStart=/usr/bin/node api_server.js
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
